@@ -1,0 +1,63 @@
+// Grid Calculation for Percentages
+@mixin col($n, $s: null) {
+	@if($s){
+		$cont-width: (( $n * ($column-width + $gutter-width) - $gutter-width) );
+		width: percentage( (( $s * ($column-width + $gutter-width) - $gutter-width) ) / $cont-width );
+		margin-right: percentage($gutter-width / $cont-width);
+	}
+	@else{
+		width: percentage( (( $n * ($column-width + $gutter-width) - $gutter-width) ) / $max-width );
+		margin-right: percentage( $gutter-width / $max-width );
+	}
+}
+ 
+// Grid container
+.row {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+	max-width: $max-width;
+	
+	&.table{
+		display: table;
+		height: 100%;
+	}
+
+	@extend %clearfix;
+
+	[class^="grid-"], [class^="nest-"] {
+		float: left;
+
+		&:last-child{
+			margin-right: 0;
+		}	
+
+		&.tight{
+			margin-right: 0;
+		}
+
+		&.center{
+			float: none;
+			margin: 0 auto;
+		}
+
+		&.jamie{
+			clear: both;
+		}
+	}
+	
+}
+ 
+// Generates styles
+@for $i from 1 to $columns {
+	.grid-#{$i}{
+		@include col($i);
+
+		@for $s from 1 to $i{
+			.nest-#{$s}{
+				@include col($i, $s);
+			}
+		}
+	}
+}
