@@ -90,7 +90,8 @@ $base: 16px;
 			}
 		}
 
-		& > a {
+		& > a{
+			@include transition((color 0.4s ease-in-out, background 0.4s ease-in-out));
 			color: inherit;
 			display: block;
 			height: 100%;
@@ -202,6 +203,7 @@ $base: 16px;
 		}
 
 		li a {
+			@include transition((color 0.4s ease-in-out, background 0.4s ease-in-out));
 			display: block;
 			padding: 10px;  
 
