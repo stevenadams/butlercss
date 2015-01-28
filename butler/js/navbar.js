@@ -1,23 +1,23 @@
-		var w = $(window).width(),
-    toggle 		= $('#toggle-menu'),
-    menu 		= $('nav ul'),
-    hasChild = $('.has-child'),
-    dropdown = $('.dropdown');
+var w = $(window).width(),
+toggle 		= $('.navbar__mobile-toggle'),
+nav 		= $('.navbar__menu'),
+nav_dropdowns = $('.navbar__menu-item--dropdown');
 
 $(function() {
-  $(toggle).on('click', function(e) {
-    e.preventDefault();
-    menu.toggleClass('is-active');
-  });
-  
-  $(hasChild).click(function(e) {
-    e.preventDefault();
-    dropdown.toggle();
-  });
+	$(toggle).on('click', function() {
+		nav.toggleClass('is-active');
+	});
+	
+	$(nav_dropdowns).on('click', function(e) {
+		e.preventDefault();
+		var self = $(this)
+		,	dropdown = self.find('.navbar__dropdown');
+		dropdown.toggleClass('is-active');
+	});
 });
 
 $(window).resize(function(){
-  if(w > 320 && menu.is(':hidden')) {
-    menu.removeAttr('style');}
+	if(w > 320 && nav.is(':hidden')) {
+		nav.removeClass('is-active');}
 });
 
