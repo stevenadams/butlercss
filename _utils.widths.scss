@@ -1,0 +1,11 @@
+@if $responsive {
+
+	@each $name in $breakpoint-has-widths {
+		@include media($name) {
+		   @include width-setup("u-width", "width", '--\\@'+$name);
+		}
+	}
+
+}@else{
+		@include width-setup('u-width','width');
+}

@@ -1,0 +1,13 @@
+pre{
+	white-space: pre;
+	word-wrap: normal;
+	overflow: auto;
+	border-radius: 2px;
+	background-color: black;
+	color: white;
+	padding: ($space * 2);
+}
+
+pre, code{
+	font-family: Courier, monospace;
+}
