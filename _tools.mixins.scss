@@ -82,9 +82,21 @@
 /*-----  End of REM  ------*/
 
 
+@mixin responsive-class($classname, $property, $value){
+    #{$classname}{ #{$property}: #{$value}; }
+
+    @if $responsive {
+    	@each $name in $breakpoint-modifiers {
+    		@include media($name) {
+                #{$classname+'\\@'+$name}{ #{$property}: #{$value}; }
+    		}
+    	}
+    }
+}
+
 
 @mixin width-setup($namespace:"", $attribute:"", $suffix:"") {
-	$prefix: $grid__class-type + $namespace + '-';
+	$prefix: '.' + $namespace + '-';
 
 
 	/**

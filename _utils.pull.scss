@@ -1,14 +1,13 @@
 @if $grid-pull-classes {
 
-	/**
-	 * Not a particularly great selector, but the DRYest way to do things.
-	 */
 	[class*="u-pull-"] { position:relative; }
 
 	@if $responsive {
+		@include width-setup('u-pull','right');
+
 		@each $name in $breakpoint-has-pull {
 			@include media($name) {
-				@include width-setup('u-pull','right','--\\@'+$name);
+				@include width-setup('u-pull','right','\\@'+$name);
 			}
 		}
 	}@else{

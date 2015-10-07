@@ -1,15 +1,8 @@
 $responsive: true !default;
-$responsive__mobile-first: false !default;
+$responsive-mobileFirst: false !default;
 
 
-$grid__gutter: 32px !default;
-
-
-/**
- * Would you like Sass’ silent classes, or regular CSS classes?
- */
-$use-silent-classes:  false !default;
-$grid__class-type: if($use-silent-classes, unquote("%"), unquote("."));
+$grid-gutter: 32px !default;
 
 /**
  * Would you like push and pull classes enabled?
@@ -24,10 +17,11 @@ $grid-pull-classes: false !default;
  * that the breakpoint fires at.
  */
 $breakpoints: (
-    's' '(max-width: 480px)',
-    'm' '(min-width: 481px) and (max-width: 1023px)',
-    'l' '(max-width: 1023px)',
-    'xl' '(min-width: 1024px)'
+    'xs' '(min-width: 400px)',
+    's' '(min-width: 550px)',
+    'm' '(min-width: 750px)',
+    'l' '(min-width: 1000px)',
+    'xl' '(min-width: 1200px)'
 ) !default;
 
 
@@ -41,6 +35,5 @@ $breakpoints: (
  * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
  * have been set to ‘true’.
  */
-$breakpoint-has-widths: ('s', 'm', 'l', 'xl') !default;
-$breakpoint-has-push:   ('s', 'm', 'l', 'xl') !default;
-$breakpoint-has-pull:   ('s', 'm', 'l', 'xl') !default;
+
+$breakpoint-modifiers: ('xs','s', 'm', 'l', 'xl') !default;

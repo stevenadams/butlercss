@@ -1,0 +1,29 @@
+.o-blocks{
+    padding: 0;
+    list-style: none;
+    margin-right: (($grid__gutter / 2) * -1);
+    margin-left: (($grid__gutter / 2) * -1);
+}
+
+    .o-blocks__item{
+        vertical-align: top;
+        display: inline-block;
+        padding-right: $grid__gutter / 2;;
+        padding-left: $grid__gutter / 2;;
+    }
+
+.o-blocks--fiveUp .o-blocks__item{
+    width: 20%;
+}
+
+.o-blocks--fourUp .o-blocks__item{
+    width: 25%;
+}
+
+.o-blocks--threeUp .o-blocks__item{
+    width: 33.333%;
+}
+
+.o-blocks--twoUp .o-blocks__item{
+    width: 50%;
+}
