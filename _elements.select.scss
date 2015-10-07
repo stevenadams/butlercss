@@ -1,8 +1,14 @@
 select{
 	background: transparent;
 	line-height: initial;
-	-webkit-appearance: none;
-	-moz-appearance: window;
+	// -webkit-appearance: none;
+	// -moz-appearance: window;
 	appearance: none;
 	border-radius: 0;
+}
+
+select::-ms-expand {
+    border: none;
+    background: transparent;
+    color: inherit;
 }
