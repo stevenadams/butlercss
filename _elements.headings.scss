@@ -1,19 +1,13 @@
-h1 {
-    @include rem(font-size, $heading-size-1);
-    @include rem(line-height, ($heading-size-1 + $space));
-}
+@each $heading in $headings {
+    $name: nth($heading, 1);
+    $font-size: nth($heading, 2);
+    $line-height: nth($heading, 3);
 
-h2 {
-    @include rem(font-size, $heading-size-2);
-    @include rem(line-height, ($heading-size-2 + $space));
-}
-
-h3 {
-    @include rem(font-size, $heading-size-3);
-    @include rem(line-height, ($heading-size-3 + $space));
-}
-
-h4 {
-    @include rem(font-size, $heading-size-4);
-    @include rem(line-height, ($heading-size-4 + $space));
+	#{$name}{
+		// @if $heading-font-family {
+		// 	font-family: $heading-font-family
+		// }
+		@include rem(font-size, $font-size);
+		line-height: $line-height / $font-size;
+	}
 }

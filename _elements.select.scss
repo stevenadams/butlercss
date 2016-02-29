@@ -1,5 +1,5 @@
 select{
-	background: transparent;
+	// background: transparent;
 	line-height: initial;
 	// -webkit-appearance: none;
 	// -moz-appearance: window;
@@ -7,8 +7,8 @@ select{
 	border-radius: 0;
 }
 
-select::-ms-expand {
-    border: none;
-    background: transparent;
-    color: inherit;
-}
+// select::-ms-expand {
+//     border: none;
+//     background: transparent;
+//     color: inherit;
+// }

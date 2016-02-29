@@ -2,36 +2,42 @@
 
 $palettes: (
 
-	// 'highlight':(
-	// 	1: ,
-	// 	2:
-	// ),
+	'brand':(
+		1: #49213b,
+		2: #da2d6a
+	),
+
+	'green':(
+		1: #81C053
+	),
 
 	'white':(
 		1: #ffffff,
-		2: #f5f5f5
+		2: #F0F0F0
+	),
+
+	'grey':(
+		1: #C7C7C7,
+		2: #414141,
+		3: #2B2C2C
 	),
 
 	'black':(
-		1: #0e0e0e
+		1: #000000
 	),
 
 	'text':(
-		1: rgba(0,0,0,0.87),
-		2: rgba(0,0,0,0.54),
-		3: rgba(0,0,0,0.38)
+		1: #666666,
 	),
 
 	'divider':(
-		1: rgba(0,0,0,0.12)
+		1: #D8D8D8
 	)
 
 );
 
 $social-colors: (
-	github: #4183c4,
 	instagram: #3f729b,
 	linkedin: #0077b5,
-	rdio: #007dc3,
 	twitter: #55acee
 );

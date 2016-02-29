@@ -1,0 +1,33 @@
+// _scopes.cms.scss
+
+.s-cms{
+
+	/** HEADINGS **/
+	h2{ margin-bottom: ($space * 3); }
+
+	h3,
+	h4{ margin-bottom: ($space * 2); }
+
+	h5{
+		@include rem(font-size, 16px);
+		margin-bottom: ($space);
+	}
+
+	h4,
+	h5{ font-weight: 800; }
+
+	/** PARAGRAPHS, LISTS **/
+	p,
+	ol,
+	ul{ margin-bottom: ($space * 4); }
+
+	p:first-of-type{
+		font-weight: 300;
+		@include rem(font-size, 21px);
+	}
+
+	ol{
+		list-style: decimal outside;
+		margin-left: ($space * 4);
+	}
+}

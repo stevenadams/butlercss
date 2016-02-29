@@ -1,5 +1,9 @@
 ul {
-    list-style: circle outside;
+    list-style: disc inside;
+}
+
+ol{
+	list-style: decimal inside;
 }
 
 li > {

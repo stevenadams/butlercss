@@ -1,10 +1,19 @@
 $space: 8px;
 
-$base-font-size: 16px !default;
-$base-font-family: sans-serif;
+$base-font-size: 18px !default;
+$base-font-family: 'neuzeit-grotesk',sans-serif;
 $base-line-height: 1.5;
+
 
 $heading-size-1: 40px;
 $heading-size-2: 32px;
 $heading-size-3: 24px;
 $heading-size-4: 20px;
+
+
+$headings: (
+    'h1'	40px	48px,
+    'h2'	28px	40px,
+    'h3'	24px	32px,
+    'h4'	21px	24px,
+) !default;

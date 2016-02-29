@@ -47,6 +47,7 @@
 	@import 'elements.images';
 	@import 'elements.links';
 	@import 'elements.lists';
+	@import 'elements.inputs';
 	@import 'elements.buttons';
 	@import 'elements.page';
 	@import 'elements.pre';
@@ -76,20 +77,42 @@
 =            Components            =
 ==================================*/
 
-	@import 'components.bands';
+	@import 'components.accordion';
 	@import 'components.buttons';
+	@import 'components.brands';
 	@import 'components.cards';
+	@import 'components.checkbox';
+	@import 'components.feedback';
+	@import 'components.footer-social';
+	@import 'components.headings';
+	@import 'components.home-intro';
+	@import 'components.hr';
+	@import 'components.panels';
+	@import 'components.page-foot';
+	@import 'components.page-head';
+	@import 'components.page-nav';
+	@import 'components.search';
+	@import 'components.product-images';
+	@import 'components.quantity';
+	@import 'components.radio';
+	@import 'components.select';
+	@import 'components.share';
+	@import 'components.subscribe';
+	@import 'components.textbox';
+	@import 'components.topbar';
+	@import 'components.utility-nav';
 
 /*-----  End of Components  ------*/
 
 
+	@import 'vendors.slick';
 
 
 /*==============================
 =            Scopes            =
 ==============================*/
 
-
+	@import 'scopes.cms';
 
 /*-----  End of Scopes  ------*/
 
@@ -97,7 +120,6 @@
 /*==============================
 =            Themes            =
 ==============================*/
-
 
 
 /*-----  End of Themes  ------*/
@@ -110,12 +132,15 @@
 	@import 'utils.align';
 	@import 'utils.backgrounds';
 	@import 'utils.border';
-	@import 'utils.case';
 	@import 'utils.center';
 	@import 'utils.clearfix';
 	@import 'utils.colors';
 	@import 'utils.display';
 	@import 'utils.floats';
+	@import 'utils.font-family';
+	@import 'utils.font-size';
+	@import 'utils.font-style';
+	@import 'utils.font-weight';
 	@import 'utils.links';
 	@import 'utils.lists';
 	@import 'utils.padding';
@@ -124,8 +149,8 @@
 	@import 'utils.push';
 	@import 'utils.spacing';
 	@import 'utils.text-columns';
-	@import 'utils.valign';
-	@import 'utils.weights';
+	@import 'utils.text-decorations';
+	@import 'utils.text-transform';
 	@import 'utils.widths';
 
 /*-----  End of Utils  ------*/

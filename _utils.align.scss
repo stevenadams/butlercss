@@ -3,9 +3,21 @@
 }
 
 .u-align-right{
-	text-align: right;
+	text-align: right !important;
 }
 
 .u-align-center{
 	text-align: center !important;
+}
+
+.u-align-middle{
+	vertical-align: middle;
+}
+
+.u-align-top{
+	vertical-align: top;
+}
+
+.u-align-bottom{
+	vertical-align: bottom;
 }

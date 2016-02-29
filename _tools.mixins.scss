@@ -146,6 +146,16 @@
 
 
 	/**
+	 * Sevenths
+	 */
+	#{$prefix+'1\\/7'+$suffix} { #{$attribute}: 14.285%; }
+	#{$prefix+'2\\/7'+$suffix} { #{$attribute}: 28.571%; }
+	#{$prefix+'3\\/7'+$suffix} { #{$attribute}: 42.857%; }
+	#{$prefix+'4\\/7'+$suffix} { #{$attribute}: 57.142%; }
+	#{$prefix+'5\\/7'+$suffix} { #{$attribute}: 71.428%; }
+	#{$prefix+'6\\/7'+$suffix} { #{$attribute}: 85.714%; }
+
+	/**
 	 * Eighths
 	 */
 	#{$prefix+'1\\/8'+$suffix} { #{$attribute}: 12.5%; }

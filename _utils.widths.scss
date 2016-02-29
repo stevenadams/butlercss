@@ -2,7 +2,7 @@
 
 	@include width-setup('u-width','width');
 
-	@each $name in $breakpoint-has-widths {
+	@each $name in $breakpoint-modifiers {
 		@include media($name) {
 		   @include width-setup("u-width", "width", '\\@'+$name);
 		}

@@ -17,3 +17,12 @@
 		}
 	}
 }
+
+.u-background-cover{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.u-background-top{ background-position-y: top; }
+.u-background-noise{ background-image: url('../img/backgrounds/background-body-repeat.jpg'); }

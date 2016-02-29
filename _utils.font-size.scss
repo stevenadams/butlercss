@@ -1,0 +1,35 @@
+// _utils.font-size.scss
+
+.u-text-meta{
+	@include rem(font-size, 12px);
+}
+
+.u-text-small{
+	@include rem(font-size, 14px);
+}
+
+.u-text-large{
+	@include rem(font-size, 60px);
+	line-height: (80px / 60px);
+}
+
+.u-text-huge{
+	@include rem(font-size, 98px);
+	line-height: (80px / 98px);
+}
+
+.u-text-intro{
+	@include rem(font-size, 21px);
+	line-height: (32px / 21px);
+}
+
+@each $heading in $headings {
+    $name: nth($heading, 1);
+    $font-size: nth($heading, 2);
+    $line-height: nth($heading, 3);
+
+	.u-text-#{$name}{
+		@include rem(font-size, $font-size);
+		line-height: $line-height / $font-size;
+	}
+}

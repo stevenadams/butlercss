@@ -5,7 +5,7 @@
 	@if $responsive {
 		@include width-setup('u-pull','right');
 
-		@each $name in $breakpoint-has-pull {
+		@each $name in $breakpoint-modifiers {
 			@include media($name) {
 				@include width-setup('u-pull','right','\\@'+$name);
 			}
